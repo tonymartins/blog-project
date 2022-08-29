@@ -1,0 +1,68 @@
+h1 {
+    font-family: 'Noticia Text', serif;
+    color: #1044FF;
+    font-size: 72px;
+    
+}
+h2 {
+    font-family: 'Noticia Text', serif;
+    color: #1044FF;
+    font-size: 30px;
+}
+h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #1044FF;
+    
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    color:#333333;
+}
+
+/*Mobile display rules*/
+body {
+    margin: 0;
+    padding: 0;
+    
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 640px auto 670px 670px 80px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "contact"
+    "footer"
+    "credits";
+}
+#header {
+    background-color: #FFE7E7;
+    grid-area: header;
+    padding: 28px;
+    padding-top: 5px;
+}
+nav {
+    display:flex;
+    justify-content:space-between;
+    flex-direction: row;
+}
+#main {
+    grid-area: main;
+    display: grid;
+    place-items: center;
+}
+#posts {
+    width:304px;
+    display: flex;
+    flex-direction: column;
+}
+#contact{
+    grid-area: contact;
+    background: #FFE7E7;
+    place-items:  center;
+}
+#footer{
+    grid-area: footer;
+}
+#credits { 
+    grid-area: credits;
+}
