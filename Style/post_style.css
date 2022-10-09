@@ -38,6 +38,11 @@ figcaption {
     margin: 0px;
     font-weight: bold;
 }
+.post-img {
+    width: 80%;
+    margin-left: 10%;
+
+}
 article > h2 {
     font-size:20px;
 }
@@ -149,9 +154,6 @@ main {
     font-size: 14px;
     margin-left: 10px;
 }
-#posts {
-    margin-top: 40px;
-}
 #post-intro {
     font-size: 20px;
     color:#333333;
@@ -235,7 +237,7 @@ ul li::before {
     font-size: 24px;
     margin: 0px;
 }
-#related-posts {
+#related-text {
     color: #112A52;
     font-style: italic;
 }
@@ -318,18 +320,20 @@ footer >div >p:first-line{
 /*Medium Screen Tablet display rules*/
 @media screen and (min-width:455px) {
 body {
-    grid-template-rows:380px auto  auto 550px 80px;
+    grid-template-rows:auto auto  auto 550px 80px;
 }
 header > h1 {
     margin:0 auto;
 }
-article {
-    padding:7%; 
-}
-#posts {
+#related-container {
     display: grid;
-    grid-template-columns:50% 50%;
-    grid-template-rows:auto;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "posts posts";
+    gap: 10px;
+}
+.related-img {
+    width: 95%;
 }
 main {
     display:flex;
@@ -341,17 +345,15 @@ main {
 body {
     display: grid;
     grid-template-columns: 66% 34%;
-    grid-template-rows: 300px auto auto 80px;
+    grid-template-rows: auto auto auto 80px;
     grid-template-areas: 
     "header header"
     "main references"
     "footer footer"
     "credits credits";
 }
-#posts {
-    display: grid;
-    grid-template-columns:33.3% 33.3% 33.4%;
-    grid-template-rows:auto;
+#categories-container {
+    align-self: baseline;
 }
 footer {
     display: grid;
