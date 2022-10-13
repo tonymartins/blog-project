@@ -70,7 +70,7 @@ body {
     padding:0px auto;
     display:grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto 670px 80px;
+    grid-template-rows: 6rem 1fr auto auto 5rem;
     grid-template-areas: 
     "header"
     "main"
